@@ -12,7 +12,7 @@ class TranslateClass(object):
         translated = self.Trans.translate(self.word, dest=self.lang).text
         data = [
             ['Language:', "Word/Sentence"],
-            ['English', self.word],
+            ['Tamil', self.word],
             ['Kannada', str(translated)]]
         table = str(tabulate(data, headers="firstrow", tablefmt="grid"))
         return table
